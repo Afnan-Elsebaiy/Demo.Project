@@ -1,14 +1,14 @@
 # Demo.Project
  the Demo Project repository! This project demonstrates a simple CRUD (Create, Read, Update, Delete) operation using ASP.NET Core 8.0.
 
-Prerequisites
+## Prerequisites
 Before you begin, ensure you have the following installed on your machine:
 
-.NET SDK 8.0
-Visual Studio 
-Getting Started
-Clone the repository:
+1-.NET SDK 8.0
+2-Visual Studio 
 
+## Getting Started
+Clone the repository:
 bash
 Copy code
 git clone https://github.com/Afnan-Elsebaiy/Demo.Project.git
@@ -17,10 +17,10 @@ Open the project in Visual Studio or your preferred code editor.
 
 Run the application
 
-Project Structure
+## Project Structure
 ## Using Three Tier:
-## BLL (Bussiness Logic Layer) : 
- ## Models: Defines the data models used in the application.
+ BLL (Bussiness Logic Layer) : 
+ Models: Defines the data models used in the application.
  -Service
         -DepartmentService.cs
            - Class DepartmentService

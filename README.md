@@ -20,20 +20,17 @@ Using Three Tier / Three Layer :<br>
 1- BLL (Bussiness Logic Layer) : <br>
  -Models.<br>
  -Service<br>
-        -DepartmentService.cs <br>
-           - Class DepartmentService <br>
-           -Interface IDepartmentService <br>
 2- DAL (Data Access Layer): <br>
  -DataBase  <br>
     -ApplicationContext.cs : Database Configuration. <br>
  -Entity <br>
-    -Department.cs <br>
+   
 
 3- Web (Presentation layer) <br>
  -Controllers. <br>
  -Views. <br>
 Program.cs: Configures services and the request processing pipeline. <br>
-CRUD Operations
+CRUD Operations : <br>
 The CRUD operations are implemented in the Controllers folder. You'll find methods for creating, reading, updating, and deleting data.
 
 ## Technologies Used

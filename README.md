@@ -9,7 +9,6 @@ Before you begin, ensure you have the following installed on your machine:
 
 ## Getting Started
 Clone the repository: <br>
-bash <br>
 Copy code <br>
 git clone https://github.com/Afnan-Elsebaiy/Demo.Project.git <br>
 cd Demo.Project <br>

@@ -18,7 +18,7 @@ Run the application
 ## Project Structure
 Using Three Tier / Three Layer :<br>
 1- BLL (Bussiness Logic Layer) : <br>
- Models: Defines the data models used in the application.<br>
+ -Models: Defines the data models used in the application.<br>
  -Service<br>
         -DepartmentService.cs <br>
            - Class DepartmentService <br>

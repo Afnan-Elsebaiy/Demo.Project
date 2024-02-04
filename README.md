@@ -16,20 +16,20 @@ Open the project in Visual Studio or your preferred code editor.<br>
 Run the application
 
 ## Project Structure
-Using Three Tier:<br>
- BLL (Bussiness Logic Layer) : <br>
+Using Three Tier / Three Layer :<br>
+1- BLL (Bussiness Logic Layer) : <br>
  Models: Defines the data models used in the application.<br>
  -Service<br>
         -DepartmentService.cs <br>
            - Class DepartmentService <br>
            -Interface IDepartmentService <br>
-DAL (Data Access Layer): <br>
+2- DAL (Data Access Layer): <br>
  -DataBase  <br>
     -ApplicationContext.cs : Database Configuration. <br>
  -Entity <br>
     -Department.cs : <br>
 
-Web (UI) <br>
+3- Web (Presentation layer) <br>
  -Controllers: Contains the controllers for handling HTTP requests. <br>
  -Views: UI/UX using bootstrap. <br>
 Program.cs: Configures services and the request processing pipeline. <br>

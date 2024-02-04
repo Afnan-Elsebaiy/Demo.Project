@@ -8,13 +8,12 @@ Before you begin, ensure you have the following installed on your machine:
 2-Visual Studio .
 
 ## Getting Started
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/Afnan-Elsebaiy/Demo.Project.git
-cd Demo.Project
-Open the project in Visual Studio or your preferred code editor.
-
+Clone the repository: <br>
+bash <br>
+Copy code <br>
+git clone https://github.com/Afnan-Elsebaiy/Demo.Project.git <br>
+cd Demo.Project <br>
+Open the project in Visual Studio or your preferred code editor.<br>
 Run the application
 
 ## Project Structure
@@ -31,32 +30,32 @@ DAL (Data Access Layer):
  -Entity
     -Department.cs : 
 
-Web (UI)
- -Controllers: Contains the controllers for handling HTTP requests.
- -Views: Frontend views (if applicable).
-Program.cs: Configures services and the request processing pipeline.
+Web (UI) <br>
+ -Controllers: Contains the controllers for handling HTTP requests. <br>
+ -Views: UI/UX using bootstrap. <br>
+Program.cs: Configures services and the request processing pipeline. <br>
 CRUD Operations
 The CRUD operations are implemented in the Controllers folder. You'll find methods for creating, reading, updating, and deleting data.
 
-Technologies Used
-•	.NET Core
-•	Entity Framework Core
-•	ASP.NET Core
+## Technologies Used
+•	.NET Core . <br>
+•	Entity Framework Core. <br>
+•	ASP.NET Core. <br>
 
 
-Dependencies
-•	Microsoft.EntityFrameworkCore
-•	Microsoft.AspNetCore.Mvc
+## Dependencies
+•	Microsoft.EntityFrameworkCore <br>
+•	Microsoft.AspNetCore.Mvc <br>
 
 
-Contributing
+##vContributing
 If you'd like to contribute to this project, please follow these steps:
 
-Fork the repository.
-Create a new branch for your feature: git checkout -b feature/new-feature.
-Commit your changes: git commit -m "Add new feature".
-Push to your branch: git push origin feature/new-feature.
-Open a pull request.
+## Fork the repository.
+Create a new branch for your feature: git checkout -b feature/new-feature.<br>
+Commit your changes: git commit -m "Add new feature".<br>
+Push to your branch: git push origin feature/new-feature.<br>
+Open a pull request.<br>
 
 
 

@@ -1,0 +1,77 @@
+﻿@model IEnumerable<DepartmentDTO>;
+@{
+    ViewBag.Title = "Department";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Department Card</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item active">Department</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+   
+    <section class="content">
+        <div class="container-fluid">
+           
+            <a asp-controller="Department" asp-action="Create" class="btn btn-primary mb-2">Create Department <i class="fas fa-plus-circle"></i></a>
+            <!-- Small boxes (Stat box) -->
+            <div class="row">
+                <div class="card">
+                    <div class="card-body">
+                <table class="table">
+                    <thead class="table-dark">
+                     <tr>
+                        <td>ID</td>
+                        <td>Name</td>
+                        <td>Code</td>
+                        <td>Actions</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Name</td>
+                                <td>@item.Code</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-black dropdown-toggle" data-bs-toggle="dropdown">
+                                           Actions
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" asp-controller="Department" asp-action="Edit" asp-route-id="@item.Id">Edit <i class="far fa-edit"></i></a></li>
+                                                    <li><a class="dropdown-item" asp-controller="Department" asp-action="Delete" asp-route-id="@item.Id">Delete <i class="fas fa-trash-alt"></i></a></li>
+                                                    <li><a class="dropdown-item" asp-controller="Department" asp-action="Details" asp-route-id="@item.Id">Details <i class="fas fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                        
+                    </tbody>
+                </table>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

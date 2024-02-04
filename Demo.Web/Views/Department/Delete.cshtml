@@ -1,0 +1,61 @@
+﻿@model DepartmentDTO
+
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Delete Department</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Department Card</li>
+
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <form asp-controller="Department" asp-action="Delete" method="post" class="form-group">
+
+                    @*<div asp-validation-summary="All" class="text-danger" ></div>*@
+                    <div class="alert alert-danger">
+                        <strong>Danger!</strong> Are you sure to delete this department : @Model.Name
+                    </div>
+
+                    <label asp-for="Name">Department Name</label>
+                    <input type="text" asp-for="Name" class="form-control" readonly />
+                    <br />
+
+                    <label asp-for="Code">Department Code</label>
+                    <input type="text" asp-for="Code" class="form-control" readonly />
+                    <br />
+
+                    <center>
+                        <input type="submit" value="Delete" class="btn btn-primary" />
+                        <a asp-controller="Department" asp-action="Index" class="btn btn-primary">Cancel</a>
+                    </center>
+
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- /.content -->
+</div>
+

@@ -1,0 +1,60 @@
+﻿@model DepartmentDTO;
+@{
+    ViewBag.Title = "Edit";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Edit Department</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item active">Department</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+
+    <section class="content">
+        <div class="container-fluid">
+            @* <a asp-controller="Department" asp-action="Create" class="btn btn-primary mb-2">Create Department</a> *@
+            <!-- Small boxes (Stat box) -->
+
+            <div class="row">
+                <form asp-controller="Department" asp-action="Edit"  method="post" class="form-group">
+                 @*    <input type="hidden" value="@Model.Id"/> *@
+                <div class="col-4">
+                   <label asp-for="Name">Name</label>
+                        <input type="text" class="form-control" asp-for="Name">
+                   <br />
+                </div>
+                                
+                <div class="col-4">
+                   <label asp-for="Code">Code</label>
+                        <input type="text" class="form-control" asp-for="Code">
+                   <br />
+                </div>
+           
+                <div class="col-4">
+                    <center class="m-4">
+                        <button type="submit" class="btn btn-primary" >Submit</button>
+                        <a asp-controller="Department" asp-action="Index" class="btn btn-primary">Cancel</a>
+                    </center>
+                </div>
+            </form>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

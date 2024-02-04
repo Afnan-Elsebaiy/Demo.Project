@@ -1,0 +1,55 @@
+﻿@model IEnumerable<DepartmentDTO>;
+@{
+    ViewBag.Title = "Department";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Department Card</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item active">Department</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Small boxes (Stat box) -->
+            <div class="row">
+                 <form asp-controller="Department" asp-action="Create" method="post" class="form-group">
+                    <div class="col-4">
+                        <label for="Name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="Name" name="Name"> 
+                        
+                    </div>
+                    <div class ="col-4">
+                        <label for="code" class="form-label">Code</label>
+                        <input type="text" class="form-control" id="code" name="Code">
+                    </div>
+                        
+                   <div class="col-4">
+                        <center class="m-4">
+                            <button type="submit" class="btn btn-primary  ">Submit</button>
+                            <a asp-controller="Department" asp-action="Index" class="btn btn-primary">Cancel</a>
+                        </center>
+                   </div >
+                </form>
+            </div>
+
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

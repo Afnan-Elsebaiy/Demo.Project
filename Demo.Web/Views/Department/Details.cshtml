@@ -1,0 +1,69 @@
+﻿
+@model DepartmentDTO;
+@{
+    ViewBag.Title = "Details";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Details</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item active">Department</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+
+    <section class="content">
+        <div class="container-fluid">
+
+            <div class="card" >
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <label asp-for="Id">ID</label>
+                            <input type="text" class="form-control" value="@Model.Id" disabled>
+                            <br />
+                        </div>
+                        <div class="col-4">
+                            <label asp-for="Name">NAME</label>
+                            <input type="text" class="form-control" value="@Model.Name" disabled>
+                            <br />
+                        </div>
+
+                        <div class="col-4">
+                            <label asp-for="Code">CODE</label>
+                            <input type="text" class="form-control" value="@Model.Code" disabled>
+                            <br />
+                        </div>
+
+
+                        <center>
+                            <a asp-controller="Department" asp-action="Index" class="btn btn-primary">Return</a>
+                            <a asp-controller="Department" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Update</a>
+                            <a asp-controller="Department" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-primary">Delete</a>
+
+                        </center>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Small boxes (Stat box) -->
+           
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

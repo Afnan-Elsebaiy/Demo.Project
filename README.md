@@ -7,7 +7,7 @@ Before you begin, ensure you have the following installed on your machine:
 1-.NET SDK 8.0 . <br>
 2-Microsoft Visual Studio .
 
-## Getting Started
+# Getting Started
 Clone the repository: <br>
 Copy code <br>
 git clone https://github.com/Afnan-Elsebaiy/Demo.Project.git <br>

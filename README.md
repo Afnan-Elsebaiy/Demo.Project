@@ -18,7 +18,7 @@ Run the application
 ## Project Structure
 Using Three Tier / Three Layer :<br>
 1- BLL (Bussiness Logic Layer) : <br>
- -Models: Defines the data models used in the application.<br>
+ -Models.<br>
  -Service<br>
         -DepartmentService.cs <br>
            - Class DepartmentService <br>
@@ -30,8 +30,8 @@ Using Three Tier / Three Layer :<br>
     -Department.cs <br>
 
 3- Web (Presentation layer) <br>
- -Controllers: Contains the controllers for handling HTTP requests. <br>
- -Views: UI/UX using bootstrap. <br>
+ -Controllers. <br>
+ -Views. <br>
 Program.cs: Configures services and the request processing pipeline. <br>
 CRUD Operations
 The CRUD operations are implemented in the Controllers folder. You'll find methods for creating, reading, updating, and deleting data.

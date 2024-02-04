@@ -1,5 +1,5 @@
 # Demo.Project
- the Demo Project repository! This project demonstrates a simple CRUD (Create, Read, Update, Delete) operation using ASP.NET Core 8.0.
+ The Demo Project repository! This project demonstrates a simple CRUD (Create, Read, Update, Delete) operation using ASP.NET Core 8.0.
 
 ## Prerequisites
 Before you begin, ensure you have the following installed on your machine:

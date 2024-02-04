@@ -27,7 +27,7 @@ Using Three Tier / Three Layer :<br>
  -DataBase  <br>
     -ApplicationContext.cs : Database Configuration. <br>
  -Entity <br>
-    -Department.cs : <br>
+    -Department.cs <br>
 
 3- Web (Presentation layer) <br>
  -Controllers: Contains the controllers for handling HTTP requests. <br>

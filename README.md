@@ -15,24 +15,12 @@ git clone https://github.com/Afnan-Elsebaiy/Demo.Project.git
 cd Demo.Project
 Open the project in Visual Studio or your preferred code editor.
 
-Run the application:
-
-bash
-Copy code
-dotnet run
-The application will be accessible at https://localhost:5001.
-
-
-Features
-Create: Add new [Department] to the database.
-Read: Retrieve [Department] from the database.
-Update: Modify existing [Department] in the database.
-Delete: Remove [Department] from the database.
+Run the application
 
 Project Structure
-BLL (Bussiness Layer) : 
- -Models: Defines the data models used in the application.
-       -DepartmentDTO.cs =>custom for entity Depatment  
+## Using Three Tier:
+## BLL (Bussiness Logic Layer) : 
+ ## Models: Defines the data models used in the application.
  -Service
         -DepartmentService.cs
            - Class DepartmentService

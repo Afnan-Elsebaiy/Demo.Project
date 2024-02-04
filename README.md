@@ -44,10 +44,10 @@ The CRUD operations are implemented in the Controllers folder. You'll find metho
 •	Microsoft.AspNetCore.Mvc <br>
 
 
-##vContributing
+##Contributing
 If you'd like to contribute to this project, please follow these steps:
 
-## Fork the repository.
+Fork the repository.
 Create a new branch for your feature: git checkout -b feature/new-feature.<br>
 Commit your changes: git commit -m "Add new feature".<br>
 Push to your branch: git push origin feature/new-feature.<br>

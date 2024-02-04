@@ -5,7 +5,7 @@
 Before you begin, ensure you have the following installed on your machine:
 
 1-.NET SDK 8.0 . <br>
-2-Visual Studio .
+2-Microsoft Visual Studio .
 
 ## Getting Started
 Clone the repository: <br>
